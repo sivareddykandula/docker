@@ -1,4 +1,4 @@
-FROM maven:3-jdk-8 as mvn
+FROM maven:3-jdk-11 as mvn
 RUN git clone https://github.com/spring-projects/spring-petclinic.git
 RUN cd spring-petclinic && mvn package
 
