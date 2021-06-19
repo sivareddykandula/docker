@@ -5,7 +5,7 @@ services:
         ports: 
             - 8080:8080
         volumes: 
-            - type: volumes
+            - type: volume
               source: loggol
               target: /var/log
         networks: 
@@ -16,7 +16,7 @@ services:
         ports: 
             - 8081:8080
         volumes: 
-            - type: volumes
+            - type: volume
               source: logspc
               target: /var/log
         networks: 
